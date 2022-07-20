@@ -1,12 +1,11 @@
 .card-wrapper {
     width: 500px;
-    /*height: 400px;*/
     min-height: 388px;
     margin: 10px;
 }
 
 .card-wrapper:hover {
-    box-shadow: 0 8px 16px rgba(62,67,104,0.1);
+    box-shadow: 0 8px 16px rgba(62, 67, 104, 0.1);
     border-radius: 8px;
     min-height: 388px;
 }
@@ -34,7 +33,7 @@
 
 .card-able-false {
     color: #FF432A;
-    border: 1px solid rgba(255,208,201,.5);
+    border: 1px solid rgba(255, 208, 201, .5);
 }
 
 .card-avatar {
@@ -42,21 +41,6 @@
     height: 160px;
     margin: 16px auto;
     position: relative;
-}
-
-.card-avatar-img {
-
-}
-
-.card-avatar-img::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,.03);
-    content: '';
-    z-index: 1;
-    width: 453px;
-    height: 160px;
 }
 
 .card-info {

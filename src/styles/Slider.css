@@ -1,0 +1,45 @@
+.card-avatar-img {
+    width: 453px;
+    height: 160px;
+    margin: 16px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    z-index: -2;
+    max-width: 353px;
+    max-height: 160px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.card-avatar-img::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .03);
+    content: '';
+    z-index: -1;
+    width: 453px;
+    height: 160px;
+}
+
+button {
+    opacity: 0;
+    width: 50px;
+    height: 160px;
+}
+
+.button-visible {
+    opacity: .1;
+    border: none;
+}
+
+.button-visible:hover {
+    background-color: rgba(153, 207, 255, 0.3);
+    opacity: 1;
+}

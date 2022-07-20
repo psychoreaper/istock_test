@@ -1,13 +1,11 @@
 import "../styles/Card.css";
-import avatar from "../img/avatar.jpg";
+import Slider from "./Slider";
 
 const Card = (props) => {
     return (
         <div className="card-wrapper">
             <div className="card-avatar">
-                <div className="card-avatar-img">
-                    <img src={avatar} alt="" height="160px" width="auto"/>
-                </div>
+                <Slider images={props.images}/>
                 <div className={"card-able card-able-" + props.able}>
                     {props.able ? "действующий" : "недействующий"}
                 </div>
