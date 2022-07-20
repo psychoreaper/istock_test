@@ -13,7 +13,7 @@ function App() {
     const cards1 = [
         {
             title: "ГОСТ Р ИСО 7046-2-2013",
-            text: "Гайка шестигранная самостопорящаяся цельнометаллическая тип 2 ГОСТ Р 50272-92",
+            text: "Гайка шестигранная самостопорящаяся цельнометаллическая тип 2 ГОСТ Р 50272-92... а вообще здесь безобразно много текста, надо бы проверить, как он влезает в это дело. Мне кажется, влезает не очень красиво, но сейчас мы это поправим. Ла-ла-ла. Много, много, много текста. Очень много, ахахахахаха. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             able: true,
             standards: 10,
             link: "https://example.com/hjklhjh",

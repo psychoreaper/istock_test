@@ -1,13 +1,13 @@
 .card-wrapper {
     width: 500px;
     min-height: 388px;
+    height: auto;
     margin: 10px;
 }
 
 .card-wrapper:hover {
     box-shadow: 0 8px 16px rgba(62, 67, 104, 0.1);
     border-radius: 8px;
-    min-height: 388px;
 }
 
 .card-able {
@@ -61,7 +61,7 @@
 }
 
 .card-button {
-    position: absolute;
+    width: 200px;
     border: 1px solid #DFE4EB;
     border-radius: 17px;
     box-sizing: border-box;
