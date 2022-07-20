@@ -22,6 +22,8 @@
     font-size: 8px;
     font-weight: 500;
     height: 16px;
+    letter-spacing: .5px;
+    z-index: 0;
 
     display: flex;
     flex-direction: row;
@@ -35,15 +37,15 @@
     border: 1px solid rgba(255,208,201,.5);
 }
 
-.card-avatar-img {
+.card-avatar {
     width: 453px;
     height: 160px;
-    background-image: url("/src/avatar.jpg");
-    background-size: auto 160px;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
     margin: 16px auto;
+    position: relative;
+}
+
+.card-avatar-img {
+
 }
 
 .card-avatar-img::after {

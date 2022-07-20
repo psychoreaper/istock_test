@@ -1,5 +1,6 @@
 import './App.css';
 import Card from "./components/Card";
+import Box from "./components/Box";
 
 function App() {
     const cards1 = [
@@ -48,6 +49,7 @@ function App() {
                 {cards2.map(i => <Card title={i.title} text={i.text} able={i.able} standards={i.standards}
                                        link={i.link}/>)}
             </div>
+            {/*<Box/>*/}
         </div>
     );
 }
