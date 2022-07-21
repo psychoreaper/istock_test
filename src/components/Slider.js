@@ -1,21 +1,31 @@
 import "../styles/Slider.css"
-import {useState} from "react";
+import {useReducer} from "react";
 
 const Slider = (props) => {
-    const [picIndex, setPicIndex] = useState(0);
-
-    const clickHandler = (event) => {
-        setPicIndex(prevState => event.target.value === "left" ? prevState - 1 : prevState + 1);
-        console.log(props.images);
+    const reducer = (state, action) => {
+        switch (action.type) {
+            case "left":
+                return {picIndex: state.picIndex - 1};
+            case "right":
+                return {picIndex: state.picIndex + 1};
+            default:
+                return state;
+        }
     }
+
+    const initialState = {picIndex: 0};
+    const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
         <div className="card-avatar-img">
-            <button className={props.images.length > 1 ? "button-visible" : ""} value="left" onClick={clickHandler}>⬅️
+            <button className={props.images.length > 1 ? "button-visible" : ""}
+                    onClick={() => dispatch({type: "left"})}>
+                ⬅️
             </button>
-            <img src={props.images.at(picIndex % props.images.length)} alt=""/>
-            <button className={props.images.length > 1 ? "button-visible" : ""} value="right"
-                    onClick={clickHandler}>➡️
+            <img src={props.images.at(state.picIndex % props.images.length)} alt=""/>
+            <button className={props.images.length > 1 ? "button-visible" : ""}
+                    onClick={() => dispatch({type: "right"})}>
+                ➡️
             </button>
         </div>
     );
