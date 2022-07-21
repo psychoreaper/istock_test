@@ -1,5 +1,5 @@
 import './App.css';
-import Card from "./components/Card";
+import Card from "./components/Card.tsx";
 
 import avatar from "./img/avatar.jpg";
 import avatar2 from "./img/bhar_kar.png";

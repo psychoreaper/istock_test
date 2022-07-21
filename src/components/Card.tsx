@@ -1,5 +1,5 @@
 import "../styles/Card.css";
-import Slider from "./Slider";
+import Slider from "./Slider.tsx";
 
 const Card = (props) => {
     return (

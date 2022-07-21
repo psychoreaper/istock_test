@@ -2,7 +2,7 @@ import "../styles/Slider.css"
 import {useReducer} from "react";
 
 const Slider = (props) => {
-    const reducer = (state, action) => {
+    const reducer = (state: { picIndex: number }, action: { type: string }): { picIndex: number } => {
         switch (action.type) {
             case "left":
                 return {picIndex: state.picIndex - 1};
